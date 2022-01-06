@@ -4,6 +4,15 @@
   <title>Солнечные батареи GreenCorp</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 <body>
   <header>
@@ -14,13 +23,13 @@
     </div>
   </header>
   <section class="about">
-      <div class="about__info">
+      <div class="about__info animate__animated animate__fadeInLeft animate__slow">
         <h1>Солнечные панели GreenRobotic</h1>
         <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-        <button>Узнать подробнее</button>
+        <button>Узнать подробнее<i class="fas fa-angle-right"></i></button>
       </div>
-      <div class="about__images">
-        <img class="about__sun—image" src="img/sun.png">
+      <div class="about__images animate__animated animate__fadeInRight animate__slow">
+        <img class="about__sun—image" src="img/sun.png" >
         <img class="about__image" src="img/solar-panel.png">
       </div>
   </section>
@@ -29,10 +38,17 @@
       <h1>Оставьте свои контакты.</h1>
       <p>Поможем подобрать модель.<br> Выбрать удобный вариант доставки и установки.<br> Гарантия возврата денег.</p>
       <form>
+
         <div class="form__group">
           <label for="name">Ваше имя</label>
           <input type="text" placeholder="Введите имя" id="name">
         </div>
+
+        <div class="form__group">
+          <label for="email">Электронный адрес</label>
+          <input type="email" placeholder="***@yandex.ru" id="email">
+      </div>
+
         <div class="form__group">
           <label for="Номер телефона">Номер телефона</label>
           <input type="text" placeholder="7(999)999-99-99" id="phone">
@@ -55,14 +71,14 @@
 
 <!--контейнер -->
       <div class="footer__container"> 
-
+<!--контейнер 1 -->
         <div class="footer__group">
           <h3>Позвонить нам:</h3>
           <div class="footer__links">
             <a href="tel:74959999999">+7 (495) 999-99-99</a>
           </div>
         </div>
-
+<!--контейнер 2 -->
         <div class="footer__group">
           <h3>Решения для дома:</h3>
           <div class="footer__links">
@@ -70,7 +86,7 @@
             <a href="#">Системы солнечных панелей GreenStation</a>
           </div>
         </div>
-
+<!--контейнер 3 -->
         <div class="footer__group">
           <h3>Компания</h3>
           <div class="footer__links">
@@ -82,9 +98,11 @@
 
       </div>
 <!--контейнер -->
+      <div class="footer__copyright">GreenCorp © 2022.</div>
 
 
-      <div class="footer__copyright">GreenCorp © 2021.</div>
+      <script src="fontawesome/js/all.min.js"></script>
   </footer>
 </body>
 </html>
+
