@@ -295,3 +295,14 @@ footer{
       flex-direction: column;
   }
 }
+
+@media (max-width: 380px) {
+.about__image {
+  width: 210px;
+}
+
+.about__sun-image {
+  width: 15px;
+  height: 15px;
+}
+}
